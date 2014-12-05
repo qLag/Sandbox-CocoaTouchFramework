@@ -8,6 +8,10 @@
 		<data>
 		CEtJhF1TrDgt9T76PIjVrQeDG7c=
 		</data>
+		<key>Headers/MyTextField.h</key>
+		<data>
+		PI1yG9iUdFAtdn7VsDQauIjTElo=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		M/TzMBBHU4D9WFm9K0t7HKF6m80=
@@ -22,6 +26,10 @@
 		<key>Headers/CarthageTest.h</key>
 		<data>
 		CEtJhF1TrDgt9T76PIjVrQeDG7c=
+		</data>
+		<key>Headers/MyTextField.h</key>
+		<data>
+		PI1yG9iUdFAtdn7VsDQauIjTElo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>

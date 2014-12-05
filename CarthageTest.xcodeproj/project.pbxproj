@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B0D53CC61A31E79C00B581BA /* CarthageTest.h in Headers */ = {isa = PBXBuildFile; fileRef = B0D53CC51A31E79C00B581BA /* CarthageTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B0D53CDE1A31E7E800B581BA /* MyTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B0D53CDC1A31E7E800B581BA /* MyTextField.h */; };
+		B0D53CDE1A31E7E800B581BA /* MyTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B0D53CDC1A31E7E800B581BA /* MyTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0D53CDF1A31E7E800B581BA /* MyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D53CDD1A31E7E800B581BA /* MyTextField.m */; };
 /* End PBXBuildFile section */
 
