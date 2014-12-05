@@ -8,6 +8,11 @@
 
 #import "MyTextField.h"
 
+@interface MyTextField()
+
+@property (nonatomic, strong) UITextField *textField;
+@end
+
 @implementation MyTextField
 
 -(instancetype)init {
@@ -36,19 +41,22 @@
     return self;
 }
 
+
 -(void) initialize {
+    
+}
+
+
+-(void)drawRect:(CGRect)rect {
+    self.textField = [[UITextField alloc] initWithFrame:CGRectMake(10, 10, self.frame.size.width -20 , self.frame.size.height -20 )];
+    [self addSubview:self.textField];
+}
+
+
+
+-(void)layoutSubviews {
     self.backgroundColor = self.bgColor;
-    UITextField *innerTextField = [[UITextField alloc] init];
-    [self addSubview:innerTextField];
-    
-    NSLayoutConstraint *rightConstraint = [NSLayoutConstraint constraintWithItem:innerTextField attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1 constant:-10];
-    NSLayoutConstraint *leftConstraint = [NSLayoutConstraint constraintWithItem:innerTextField attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1 constant:10];
-    NSLayoutConstraint *topConstraint = [NSLayoutConstraint constraintWithItem:innerTextField attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1 constant:10];
-    NSLayoutConstraint *bottomConstraint = [NSLayoutConstraint constraintWithItem:innerTextField attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1 constant:-10];
-    
-    innerTextField.backgroundColor = self.tfBgColor;
-    innerTextField.borderStyle = UITextBorderStyleRoundedRect;
-    [self addConstraints:@[rightConstraint, leftConstraint, topConstraint, bottomConstraint]];
-    
+    self.textField.backgroundColor = self.tfBgColor;
+    self.textField.borderStyle = UITextBorderStyleRoundedRect;
 }
 @end
